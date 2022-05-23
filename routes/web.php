@@ -10,8 +10,6 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
-// Route::view('/', 'master');
-
 
 Route::group(['prefix' => 'admin'], function () {
     Route::middleware('auth')->group(function () {

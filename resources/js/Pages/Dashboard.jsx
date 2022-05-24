@@ -37,7 +37,7 @@ export default function Dashboard() {
                         <div className="row">
                             <div className="col-8">
                             <div className="numbers">
-                                <p className="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                                <p className="text-sm mb-0 text-uppercase font-weight-bold">No. of Users</p>
                                 <h5 className="font-weight-bolder">
                                 2,300
                                 </h5>
@@ -62,7 +62,7 @@ export default function Dashboard() {
                         <div className="row">
                             <div className="col-8">
                             <div className="numbers">
-                                <p className="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                                <p className="text-sm mb-0 text-uppercase font-weight-bold">No. of token</p>
                                 <h5 className="font-weight-bolder">
                                 +3,462
                                 </h5>
@@ -297,4 +297,4 @@ export default function Dashboard() {
     )
 }
 
-Dashboard.layout = (page) => <Base children={page} title={"Dashboard"}/>
+Dashboard.layout = (page) => <Base children={page}/>

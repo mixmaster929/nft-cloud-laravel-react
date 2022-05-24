@@ -21,7 +21,7 @@ class UserController extends Controller
     public function reports()
     {
         $users = UserResource::collection(User::latest()->paginate(10));
-        return inertia('Users/Index', [
+        return inertia('Users/Report', [
             'users' => $users,
         ]);
     }

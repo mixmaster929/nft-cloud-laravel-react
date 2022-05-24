@@ -35,10 +35,10 @@ export default function Login({ errors }) {
                                                 {errors && (<div className='text-danger mt-1'>{errors.password}</div>)}
 
                                             </div>
-                                            <div className="form-check form-switch">
+                                            {/* <div className="form-check form-switch">
                                                 <input  value={data.remember} onChange={(e) => setData({...values, remember: e.target.checked})} name='remember' id='remember' className="form-check-input" type="checkbox" />
                                                 <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
-                                            </div>
+                                            </div> */}
                                             <div className="text-center">
                                                 <button type="submit" className="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                                             </div>

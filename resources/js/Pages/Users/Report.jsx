@@ -60,24 +60,15 @@ export default function Index(props) {
                                 <table className="table align-items-center justify-content-center mb-0" width="100%">
                                     <thead>
                                         <tr>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 text-left">Account<br />Name</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 text-left">Address</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-left opacity-7 ps-2">Bio</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-left opacity-7 ps-2">Personal<br />URL</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-left opacity-7 ps-2">Verified</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 text-left">User</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 text-left">Reportee</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-left opacity-7 ps-2">Message</th>
                                             <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {users.map((user, index) => (
                                             <tr key={user.id}>
-                                                <td className='text-left'>
-                                                    <div className="d-flex px-2">
-                                                        <div className="my-auto">
-                                                            <h6 className="mb-0 text-sm">{user.name}</h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td className='text-left'>
                                                     <p className="text-sm font-weight-bold mb-0">{user.username}</p>
                                                 </td>
@@ -86,11 +77,6 @@ export default function Index(props) {
                                                 </td>
                                                 <td className='text-left'>
                                                     <span className="text-xs font-weight-bold">{user.name}</span>
-                                                </td>
-                                                <td className="align-middle text-left">
-                                                    <div className="d-flex align-items-center text-left">
-                                                        <span className="text-xs font-weight-bold mb-0">Yes</span>
-                                                    </div>
                                                 </td>
                                                 <td className="align-middle text-center" width="10%">
                                                 <div>
@@ -125,4 +111,4 @@ export default function Index(props) {
     )
 }
 
-Index.layout = (page) => <Base key={page} children={page} />
+Index.layout = (page) => <Base key={page} children={page}/>

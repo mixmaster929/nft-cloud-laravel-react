@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
@@ -20,7 +21,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('logout', [LoginController::class, 'destroy'])->name('logout');
         Route::get('users', [UserController::class, 'index'])->name('users.index');
         Route::get('users/reports', [UserController::class, 'reports'])->name('users.reports');
-        Route::get('categories', [UserController::class, 'reports'])->name('categories');
+        Route::get('categories', [CategoryController::class, 'index'])->name('categories');
         Route::get('fees', [UserController::class, 'reports'])->name('fees');
         Route::get('transactions', [UserController::class, 'reports'])->name('transactions');
         Route::get('featured_collections', [UserController::class, 'reports'])->name('featured_collections');

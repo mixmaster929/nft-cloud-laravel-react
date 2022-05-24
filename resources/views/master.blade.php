@@ -11,11 +11,11 @@
     <link href="/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    {{-- <link href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> --}}
     <link href="/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="/css/argon-dashboard.css?v=2.0.0" rel="stylesheet" />
-
+    <link rel="icon" href="/img/logo-1.png" />
+    <title>NFT Marketplace Website Template</title>
     @routes
 
     <script src="{{ mix('/js/app.js') }}" defer></script>
@@ -24,7 +24,6 @@
     @inertia
     <!--   Core JS Files   -->
     <script src="/js/core/popper.min.js"></script>
-    {{-- <script src="/js/core/bootstrap.min.js"></script> --}}
     <script src="/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="/js/plugins/smooth-scrollbar.min.js"></script>
     
